@@ -1,6 +1,5 @@
-import ReactDOM from 'react-dom';
-import React from 'react';
-const App = () => {
- return <h1>This is my React app!</h1>;
- }
-ReactDOM.render(<App />, document.getElementById('app'));
+import helloWorld from './hello-world.js';
+import addImage from './add-image.js';
+
+helloWorld();
+addImage();
