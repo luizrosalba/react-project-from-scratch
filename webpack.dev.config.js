@@ -1,6 +1,8 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
 
 module.exports = {
     entry: './src/index.js',
@@ -66,6 +68,7 @@ module.exports = {
             title: 'Hello world',
             template: 'index.html',
             description: 'some description'
-        })
+        }),
+        new BundleAnalyzerPlugin()
     ]
 };

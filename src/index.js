@@ -1,5 +1,7 @@
 import HelloWorldButton from './components/hello-world-button/hello-world-button.js';
 import Heading from './components/heading/heading.js';
+//import _ from 'lodash';
+import merge from 'lodash/merge';
 
 const heading = new Heading();
 heading.render();
